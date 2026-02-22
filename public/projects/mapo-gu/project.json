@@ -1,0 +1,189 @@
+{
+  "name": "마포구 (Mapo-gu)",
+  "mapW": 1400,
+  "mapH": 1000,
+  "layers": [
+    { "id": "bg-blank", "name": "Background (Blank)", "type": "image", "src": "bg-blank.jpeg", "visible": true, "opacity": 1 },
+    { "id": "bg-full", "name": "Background (Buildings)", "type": "image", "src": "bg-full.jpeg", "visible": false, "opacity": 1 },
+    { "id": "svg-map", "name": "SVG Map (Reference)", "type": "image", "src": "map.svg", "visible": false, "opacity": 0.7 }
+  ],
+  "gridDefaults": { "cellW": 70, "cellH": 35, "offX": 0, "offY": 0 },
+  "groups": [
+    {
+      "id": "sangam", "name": "상암동", "color": "#E57373",
+      "zones": [
+        { "id": "sangam_B1", "name": "DMC 미디어시티" },
+        { "id": "sangam_B2", "name": "DMC역 상권" },
+        { "id": "sangam_B3", "name": "월드컵공원 통합" },
+        { "id": "sangam_B4", "name": "상암 주거단지" },
+        { "id": "sangam_B5", "name": "월드컵경기장 일대" },
+        { "id": "sangam_B6", "name": "증산역 주변" },
+        { "id": "sangam_B7", "name": "난지도 환경시설" }
+      ]
+    },
+    {
+      "id": "seongsan1", "name": "성산1동", "color": "#FFB74D",
+      "zones": [
+        { "id": "seongsan1_B1", "name": "월드컵경기장" },
+        { "id": "seongsan1_B2", "name": "성산 주거단지" },
+        { "id": "seongsan1_B3", "name": "월드컵시장" },
+        { "id": "seongsan1_B4", "name": "성미산로 일대" },
+        { "id": "seongsan1_B5", "name": "성산로 대로변" },
+        { "id": "seongsan1_B6", "name": "난지천공원" }
+      ]
+    },
+    {
+      "id": "seongsan2", "name": "성산2동", "color": "#FFF176",
+      "zones": [
+        { "id": "seongsan2_B1", "name": "마포구청 일대" },
+        { "id": "seongsan2_B2", "name": "마포구청역 상권" },
+        { "id": "seongsan2_B3", "name": "성산 대단지 A" },
+        { "id": "seongsan2_B4", "name": "성산 대단지 B" },
+        { "id": "seongsan2_B5", "name": "성산 빌라지대" },
+        { "id": "seongsan2_B6", "name": "연남동 경계" },
+        { "id": "seongsan2_B7", "name": "성미산·문화비축기지" }
+      ]
+    },
+    {
+      "id": "mangwon2", "name": "망원2동", "color": "#AED581",
+      "zones": [
+        { "id": "mangwon2_B1", "name": "망원2동 주택가" },
+        { "id": "mangwon2_B2", "name": "월드컵로변" },
+        { "id": "mangwon2_B3", "name": "성미산 주변" },
+        { "id": "mangwon2_B4", "name": "한강변 서측" },
+        { "id": "mangwon2_B5", "name": "망원동 서측" }
+      ]
+    },
+    {
+      "id": "mangwon1", "name": "망원1동", "color": "#4DB6AC",
+      "zones": [
+        { "id": "mangwon1_B1", "name": "망원역 주변" },
+        { "id": "mangwon1_B2", "name": "망원시장" },
+        { "id": "mangwon1_B3", "name": "망원동 주택가" },
+        { "id": "mangwon1_B4", "name": "포은로 일대" },
+        { "id": "mangwon1_B5", "name": "망원한강공원" },
+        { "id": "mangwon1_B6", "name": "합정 경계" }
+      ]
+    },
+    {
+      "id": "yeonnam", "name": "연남동", "color": "#4FC3F7",
+      "zones": [
+        { "id": "yeonnam_B1", "name": "경의선숲길 남단" },
+        { "id": "yeonnam_B2", "name": "연남동 맛집거리" },
+        { "id": "yeonnam_B3", "name": "연남동 주택가 남" },
+        { "id": "yeonnam_B4", "name": "연남동 주택가 북" },
+        { "id": "yeonnam_B5", "name": "경의선숲길 북단" },
+        { "id": "yeonnam_B6", "name": "성산동 경계" }
+      ]
+    },
+    {
+      "id": "hapjeong", "name": "합정동", "color": "#7986CB",
+      "zones": [
+        { "id": "hapjeong_B1", "name": "합정역 상권" },
+        { "id": "hapjeong_B2", "name": "양화로·출판단지" },
+        { "id": "hapjeong_B3", "name": "합정동 카페골목" },
+        { "id": "hapjeong_B4", "name": "한강둔치·절두산" },
+        { "id": "hapjeong_B5", "name": "합정동 주택가" },
+        { "id": "hapjeong_B6", "name": "망원동 경계" }
+      ]
+    },
+    {
+      "id": "seogyo", "name": "서교동", "color": "#BA68C8",
+      "zones": [
+        { "id": "seogyo_B1", "name": "홍대입구역 광장" },
+        { "id": "seogyo_B2", "name": "걷고싶은거리·연세로" },
+        { "id": "seogyo_B3", "name": "상수동 카페골목" },
+        { "id": "seogyo_B4", "name": "홍익대~와우산" },
+        { "id": "seogyo_B5", "name": "동교동 주거" },
+        { "id": "seogyo_B6", "name": "서교동 주택가 내부" },
+        { "id": "seogyo_B7", "name": "경의선숲길 서교" }
+      ]
+    },
+    {
+      "id": "seogang", "name": "서강동", "color": "#F06292",
+      "zones": [
+        { "id": "seogang_B1", "name": "서강대 캠퍼스" },
+        { "id": "seogang_B2", "name": "대흥로·학생상권" },
+        { "id": "seogang_B3", "name": "양화로 서강 구간" },
+        { "id": "seogang_B4", "name": "서강동 주택가 북" },
+        { "id": "seogang_B5", "name": "서강동 주택가 남" },
+        { "id": "seogang_B6", "name": "합정·서교 경계" },
+        { "id": "seogang_B7", "name": "노고산·와우산 녹지" }
+      ]
+    },
+    {
+      "id": "sinsu", "name": "신수동", "color": "#FF8A65",
+      "zones": [
+        { "id": "sinsu_B1", "name": "광흥창역 주변" },
+        { "id": "sinsu_B2", "name": "서강대 정문 일대" },
+        { "id": "sinsu_B3", "name": "신수동 주택가 북" },
+        { "id": "sinsu_B4", "name": "한강변·서강" },
+        { "id": "sinsu_B5", "name": "신수동 주택가 남" }
+      ]
+    },
+    {
+      "id": "daeheung", "name": "대흥동", "color": "#A1887F",
+      "zones": [
+        { "id": "daeheung_B1", "name": "대흥역 학원가" },
+        { "id": "daeheung_B2", "name": "서강대 후문·마포아트센터" },
+        { "id": "daeheung_B3", "name": "경의선숲길 대흥" },
+        { "id": "daeheung_B4", "name": "노고산 주거" },
+        { "id": "daeheung_B5", "name": "이대역 주변" }
+      ]
+    },
+    {
+      "id": "yeomni", "name": "염리동", "color": "#90A4AE",
+      "zones": [
+        { "id": "yeomni_B1", "name": "염리동 주택가" },
+        { "id": "yeomni_B2", "name": "염리 소금길" },
+        { "id": "yeomni_B3", "name": "대흥로변 상업" },
+        { "id": "yeomni_B4", "name": "남측 주거" },
+        { "id": "yeomni_B5", "name": "서울여고 일대" }
+      ]
+    },
+    {
+      "id": "yonggang", "name": "용강동", "color": "#80CBC4",
+      "zones": [
+        { "id": "yonggang_B1", "name": "백범로 상업축" },
+        { "id": "yonggang_B2", "name": "용강동 아파트단지" },
+        { "id": "yonggang_B3", "name": "용강동 주택가" },
+        { "id": "yonggang_B4", "name": "용강동상점가" },
+        { "id": "yonggang_B5", "name": "신수동 경계" },
+        { "id": "yonggang_B6", "name": "한강변·마포나루길" }
+      ]
+    },
+    {
+      "id": "dohwa", "name": "도화동", "color": "#CE93D8",
+      "zones": [
+        { "id": "dohwa_B1", "name": "마포역 주변" },
+        { "id": "dohwa_B2", "name": "마포대로변 업무" },
+        { "id": "dohwa_B3", "name": "도화 주택가" },
+        { "id": "dohwa_B4", "name": "한강변·마포나루" },
+        { "id": "dohwa_B5", "name": "용강동 경계 주거" }
+      ]
+    },
+    {
+      "id": "gongdeok", "name": "공덕동", "color": "#9FA8DA",
+      "zones": [
+        { "id": "gongdeok_B1", "name": "공덕역 환승허브" },
+        { "id": "gongdeok_B2", "name": "마포대로 업무지구" },
+        { "id": "gongdeok_B3", "name": "공덕시장 일대" },
+        { "id": "gongdeok_B4", "name": "신공덕 주거단지" },
+        { "id": "gongdeok_B5", "name": "공덕 북측 주거" },
+        { "id": "gongdeok_B6", "name": "경의선숲길 공덕" },
+        { "id": "gongdeok_B7", "name": "마포대교·한강변" }
+      ]
+    },
+    {
+      "id": "ahyeon", "name": "아현동", "color": "#EF9A9A",
+      "zones": [
+        { "id": "ahyeon_B1", "name": "아현뉴타운 대단지" },
+        { "id": "ahyeon_B2", "name": "애오개역·아현시장" },
+        { "id": "ahyeon_B3", "name": "마포로 대로변" },
+        { "id": "ahyeon_B4", "name": "아현동 구주택가" },
+        { "id": "ahyeon_B5", "name": "충정로 경계" },
+        { "id": "ahyeon_B6", "name": "이대역 방면" }
+      ]
+    }
+  ]
+}

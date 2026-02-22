@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IsoCity Studio</title>
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- ═══ Left Panel: Tools & Layers ═══ -->
+  <aside id="panel-left">
+    <div class="panel-header">
+      <h1 class="logo">IsoCity <span>Studio</span></h1>
+    </div>
+
+    <!-- Grid Settings -->
+    <section class="panel-section" id="section-grid">
+      <h3 class="section-title" data-collapse="grid">
+        <span class="collapse-arrow open">▶</span> Grid
+      </h3>
+      <div class="section-body" id="body-grid">
+        <div class="ctrl">
+          <label>Cell W</label>
+          <input type="range" id="ctrl-cell-w" min="25" max="200" value="70" step="5">
+          <span class="ctrl-val" id="val-cell-w">70</span>
+        </div>
+        <div class="ctrl">
+          <label>Cell H</label>
+          <input type="range" id="ctrl-cell-h" min="12" max="100" value="35" step="1">
+          <span class="ctrl-val" id="val-cell-h">35</span>
+        </div>
+        <div class="ctrl">
+          <label>X Offset</label>
+          <input type="range" id="ctrl-off-x" min="-100" max="100" value="0" step="1">
+          <span class="ctrl-val" id="val-off-x">0</span>
+        </div>
+        <div class="ctrl">
+          <label>Y Offset</label>
+          <input type="range" id="ctrl-off-y" min="-100" max="100" value="0" step="1">
+          <span class="ctrl-val" id="val-off-y">0</span>
+        </div>
+        <div class="ctrl">
+          <label>Opacity</label>
+          <input type="range" id="ctrl-opacity" min="0" max="1" value="0.45" step="0.05">
+          <span class="ctrl-val" id="val-opacity">0.45</span>
+        </div>
+        <div class="ctrl">
+          <label>Cell #</label>
+          <input type="checkbox" id="ctrl-numbers" checked>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layers -->
+    <section class="panel-section" id="section-layers">
+      <h3 class="section-title" data-collapse="layers">
+        <span class="collapse-arrow open">▶</span> Layers
+      </h3>
+      <div class="section-body" id="body-layers">
+        <div id="layer-list"></div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="panel-section" id="section-stats">
+      <h3 class="section-title">Stats</h3>
+      <div class="section-body">
+        <div class="stat-row"><span>Cells</span><span class="accent" id="stat-cells">0</span></div>
+        <div class="stat-row"><span>Zones assigned</span><span class="gold" id="stat-assigned">0/0</span></div>
+        <div class="stat-row"><span>Cells used</span><span id="stat-cells-used">0</span></div>
+        <div class="stat-row"><span>Selected</span><span class="accent" id="stat-selected">0</span></div>
+      </div>
+    </section>
+
+    <!-- Actions -->
+    <section class="panel-section">
+      <div class="section-body">
+        <p class="hint">
+          1. Click cells to select<br>
+          2. Click a zone name to assign<br>
+          Esc = clear · Ctrl+Z = undo
+        </p>
+        <div class="btn-row">
+          <button class="btn" id="btn-clear-sel">Clear Selection</button>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="btn-export">Export</button>
+          <button class="btn" id="btn-import">Import</button>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-danger" id="btn-reset">Reset All</button>
+          <button class="btn" id="btn-undo">Undo</button>
+        </div>
+        <input type="file" id="file-import" accept=".json" style="display:none">
+      </div>
+    </section>
+  </aside>
+
+  <!-- ═══ Canvas ═══ -->
+  <canvas id="canvas"></canvas>
+
+  <!-- ═══ Right Panel: Zone List ═══ -->
+  <aside id="panel-right">
+    <div class="panel-header">
+      <h2>Zones <span id="stat-assigned2" class="dim">0/0</span></h2>
+    </div>
+    <input id="search-input" placeholder="Search zones..." />
+    <div id="zone-list"></div>
+  </aside>
+
+  <!-- ═══ Bottom Bar ═══ -->
+  <div id="bar-bottom">
+    <span id="info-text">Loading project...</span>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
